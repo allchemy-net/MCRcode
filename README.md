@@ -3,7 +3,12 @@ This repo contains code for chemical network propagation to our paper "Systemati
 - [python](https://www.python.org/) 3.x (tested on 3.9.16)
 - [rdkit](https://www.rdkit.org)  (tested on 2022.03.2)
 - [networkx](https://networkx.org/) 2.x (tested on 2.5.1)
-  
+
+  The easier way to install dependencies is [using conda](https://www.rdkit.org/docs/Install.html) alternatively you can install python & rdkit using packae manager from your operating system and the install networkx using pip. There is no special hardware requirements (any hardware on which you an install rdkit and python is fine). Installation of dependencies may take from several minutes (modern laptop or desktop computer with 'normal' internet connection) up to few hours (very slow machine with very slow internet connection).
+
+# Installation:
+There is no special installation procedure it is enough to download/clone code and run commands in directory with source.
+
 # Example usage:
 `$ python chemNetwork.py  --sbs "CC(C)CC=O.C=CCN.[C-]#[N+]C1CCCCC1.O=C(O)c1ccccc1"  --gens 5`
 Required options:
@@ -14,7 +19,7 @@ Other options:
 - `--wrongprods` - location of file with defined motifs (in SMARTS format) not allowed in products (default `wrong_smarts_list.txt`)
 - `--rxdb` - location of file with reaction databse (default `reactions.csv`)
 - `--verbose` - verbosity level, default 0, increase it to obtain information usefull for debuging
-  
+
 # Output explanation:
 ```
 $ python chemNetwork.py  --sbs "CC(C)CC=O.C=CCN.[C-]#[N+]C1CCCCC1.O=C(O)c1ccccc1"  --gens 5  
